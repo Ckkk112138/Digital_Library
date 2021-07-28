@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_blue"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/back_register"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:textSize="30sp"
+            android:textColor="#fff"
+            android:layout_marginLeft="120dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:hint="username"
+            android:textSize="30sp"/>
+        <EditText
+        android:id="@+id/register_password"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:hint="password"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:inputType="numberPassword"/>
+        <EditText
+            android:id="@+id/register_password2"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:hint="re-password"
+            android:layout_marginTop="15dp"
+            android:textSize="30sp"
+            android:inputType="numberPassword"/>
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Sign up"
+            android:textSize="40dp"
+            android:background="@color/bg_blue"
+            android:textColor="#fff"/>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

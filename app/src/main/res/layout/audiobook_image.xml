@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:alignmentMode="alignMargins"
+
+        android:columnCount="2"
+        android:rowCount="3"
+        >
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/bookshelf_LL1_audio"
+            android:layout_width="130dp"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+
+            android:layout_marginLeft="20dp">
+
+            <ImageView
+                android:id="@+id/bookshelf_cover1_audio"
+                android:layout_width="120dp"
+                android:layout_height="200dp"
+                android:src="@null"/>
+
+            <ImageView
+                android:id="@+id/bookshelf_delete1_audio"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/delete_icon"
+                android:layout_gravity="right"
+                android:layout_marginTop="-200dp"/>
+
+            <TextView
+                android:id="@+id/bookshelf_name1_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="170dp"
+                android:text="@null"
+                android:textSize="11dp"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                />
+
+
+        </LinearLayout>
+
+
+    </GridLayout>
+</LinearLayout>

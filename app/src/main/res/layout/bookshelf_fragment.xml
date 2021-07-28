@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/main_tab_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@color/brown"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_tab_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+
+                    android:button="@null"
+                    android:checked="true"
+                    android:padding="10dp"
+                    android:text="Book"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_tab_audiobook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.6"
+
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:text="Audio Book"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_tab_Video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+
+                    android:button="@null"
+                    android:padding="10dp"
+                    android:text="Video"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="30sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_bookshelf"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
